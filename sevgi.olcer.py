@@ -1,0 +1,19 @@
+isim1 = input("İsminiz: ")
+isim2 = input("Arkadaşının ismi: ")
+# len fonksiyonu ile isimlerin uzunluklarını alıyoruz
+sevgi = len(isim1) + len(isim2)
+
+if len(isim1) > len(isim2):
+    sevgi -= 5
+else:
+    sevgi += 3
+    sevgi *= 52
+    sevgi = sevgi / (100 + len(isim2))
+
+if sevgi>10:
+    sevgi = 10
+else:
+    # round fonksiyonu ile sonucumuzu yuvarlıyoruz
+    sevgi = round(sevgi)
+
+print(isim1, "ve ",isim2," sevgi puanı ",sevgi)
