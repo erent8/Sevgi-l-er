@@ -1,1 +1,1 @@
-# Sevgi olcer
+sevgi ölçer
